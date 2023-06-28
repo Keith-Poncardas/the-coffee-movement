@@ -1,0 +1,133 @@
+
+/* Universal Selector Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Main Content Wrapper */
+.main-wrapper {
+  width: 100%;
+  height: auto;
+}
+
+/* Header Content */
+.header-content {
+  background-image: url('/assets/img/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.navbar {
+  background-color: #F5F1E8;
+}
+.navbar .logo {
+  width: 7em;
+}
+.navbar-nav .nav-link {
+  color: #2d2c2b;
+  font-size: 15px;
+}
+.navbar-nav .last-link:last-child{
+  color: #F5F1E8;
+  background-color: #D9BAA0;
+  border-radius: 10px;
+}
+.navbar-nav .last-link:last-child:hover {
+  background-color: #d9baa0cc;
+}
+.image-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
+}
+.image-content-wrapper .image-content {
+  max-width: 60%;
+  height: auto;
+}
+
+/* Main Content */
+.main-content {
+  background-color: #f5f1e8;
+  text-align: center;
+}
+.main-content h1 {
+  color: #945C44;
+  font-size: 1.7em;
+}
+.main-content h3 {
+  color: #945C44;
+  font-size: 1.3em;
+}
+.main-content h4 {
+  color: #945C44;
+  font-size: 1.3em;
+}
+.main-content p {
+  color: #B37B5A;
+  font-size: 13px;
+}
+
+/* Footer Content */
+.footer-content {
+  background-color: #D9BAA0;
+  padding: 25px;
+  padding-bottom: 10px;
+}
+.footer-content p strong {
+  color: #945C44;
+  font-size: 1em;
+}
+.footer-content p {
+  color: #AD816A;
+  font-size: 13px;
+}
+.footer-content a {
+  color: #945C44;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+/* Media Query For Mobile Screen */
+@media screen and (max-width: 767px) {
+  .header-content {
+    height: 61vh;
+  }
+  .navbar .logo {
+    width: 5em;
+  }
+  .navbar-nav .last-link:last-child{
+    color: #2d2c2b;
+    background: none;
+  }
+  .image-content-wrapper {
+    margin-top: 15vh;
+  }
+  .image-content-wrapper .image-content {
+    width: 75%;
+    height: auto;
+  }
+}
+/* Media Query For Tablet Screen */
+@media screen and (min-width: 530px) and (max-width: 1023px) {
+  .header-content {
+    height: 77vh;
+  }
+  .navbar .logo {
+    width: 6em;
+  }
+  .navbar-nav .last-link:last-child{
+    color: #2d2c2b;
+    background: none;
+  }
+  .image-content-wrapper {
+    margin-top: 22vh;
+  }
+  .image-content-wrapper .image-content {
+    width: 70%;
+    height: auto;
+  }
+}
